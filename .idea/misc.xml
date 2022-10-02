@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/layout/activity_main.xml" value="0.29791666666666666" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/drawable/add.xml" value="0.1" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/drawable/cancel.xml" value="0.204" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.196" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/layout/activity_add_card.xml" value="0.1" />
+        <entry key="..\:/Users/gabo0/Documents/AndroidStuff/CoolFlashcardApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
