@@ -16,7 +16,7 @@ class AddCardActivity : AppCompatActivity() {
         }
 
         findViewById<View>(R.id.save).setOnClickListener {
-            val data = Intent()
+            val data = Intent(this, MainActivity::class.java)
             data.putExtra(
                 "question",
                 findViewById<EditText>(R.id.editTextField).text.toString()
@@ -26,10 +26,8 @@ class AddCardActivity : AppCompatActivity() {
                 findViewById<EditText>(R.id.editTextField2).text.toString()
             )
             setResult(RESULT_OK, data)
-
             finish()
         }
-        // Left off at "Getting Data when an Activity is Created"
 
     }
 }
