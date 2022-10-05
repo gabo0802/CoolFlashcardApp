@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         val flashcardQuestion = findViewById<TextView>(R.id.flashcard_question)
         val flashcardAnswer = findViewById<TextView>(R.id.flashcard_answer)
         flashcardQuestion.setOnClickListener {
-            flashcardQuestion.visibility = View.INVISIBLE;
-            flashcardAnswer.visibility = View.VISIBLE;
+            flashcardQuestion.visibility = View.INVISIBLE
+            flashcardAnswer.visibility = View.VISIBLE
             Toast.makeText(this, "Question button was clicked", Toast.LENGTH_SHORT).show()
             Log.i("MainActivity", "Question button was clicked")
         }
@@ -37,11 +37,14 @@ class MainActivity : AppCompatActivity() {
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 val data: Intent? = result.data
                 if (data != null) {
-                    val flashcardQuestion = data.getStringExtra("question")
-                    val flashcardAnswer = data.getStringExtra("answer")
+                    val question = data.getStringExtra("question")
+                    val answer = data.getStringExtra("answer")
 
-                    Log.i("MainActivity", "Question: $flashcardQuestion")
-                    Log.i("MainActivity", "Answer: $flashcardAnswer")
+                    flashcardQuestion.text = question
+                    flashcardAnswer.text = answer
+
+                    Log.i("MainActivity", "Question: $question")
+                    Log.i("MainActivity", "Answer: $answer")
                 } else {
                     Log.i("MainActivity", "Returned null data from AddCardActivity")
                 }
