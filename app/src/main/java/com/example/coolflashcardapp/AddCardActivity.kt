@@ -12,7 +12,8 @@ class AddCardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add_card)
 
         findViewById<View>(R.id.cancel).setOnClickListener {
-            finish();
+            finish()
+            overridePendingTransition(R.anim.right_in, R.anim.left_out)
         }
 
         findViewById<View>(R.id.save).setOnClickListener {
@@ -27,6 +28,7 @@ class AddCardActivity : AppCompatActivity() {
             )
             setResult(RESULT_OK, data)
             finish()
+            overridePendingTransition(R.anim.right_in, R.anim.left_out)
         }
 
     }

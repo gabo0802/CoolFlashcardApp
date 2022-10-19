@@ -15,16 +15,19 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="20dp"
+        android:paddingLeft="20dp"
         android:layout_marginBottom="20dp"
-        android:hint="Enter The Question Here:" />
-
+        android:hint="Enter The Question Here:"
+        android:background="@drawable/rounded_border_notfilled" />
     <EditText
         android:id="@+id/editTextField2"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="400dp"
-        android:hint="Enter The Answer Here:" />
+        android:paddingLeft="20dp"
+        android:hint="Enter The Answer Here:"
+        android:background="@drawable/rounded_border_notfilled"/>
 
 
     <ImageView
